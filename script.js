@@ -42,7 +42,7 @@ async function getQuote() {
             quoteText.classList.remove('long-quote');
         }
         //Stop loader and show quote
-        quoteText.innerText = data.quoteText;
+        quoteText.innerText = data.quoteText + '"';
         complete();
     } catch(error) {
         getQuote();
